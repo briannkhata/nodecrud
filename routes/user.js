@@ -16,7 +16,6 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/add", function (req, res, next) {
-  // render to views/user/add.ejs
   res.render("users/add", {
     title: "Add New User",
     name: "",
