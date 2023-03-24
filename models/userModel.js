@@ -1,7 +1,8 @@
+
 const mongoose = require("../database.js");
 
 // create an schema
-var userSchema = new mongoose.Schema({
+var userSchema = new Schema({
   name: String,
   email: String,
 });

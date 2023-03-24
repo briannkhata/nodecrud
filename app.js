@@ -1,13 +1,52 @@
+require("dotenv").config();
+const expressLayouts = require('express-ejs-layouts');
+const express = require("express");
+const bodyParser = require('body-parser');
+
+var app = express();
+
+app.use(expressLayouts);
+const port = 500 || process.env.PORT;
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+app.use(express.static("public"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var createError = require("http-errors");
-var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var flash = require("express-flash");
 var session = require("express-session");
-var usersRouter = require("./routes/users");
-var app = express();
+var usersRouter = require("./routes/user.js");
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -46,3 +85,6 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 module.exports = app;
+*/
+
+
